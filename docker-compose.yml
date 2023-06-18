@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+  c_playground:
+    container_name: backend
+    image: gcc:4.9
+    volumes:
+      - ./:/usr/src/playground
+    working_dir: /usr/src/playground
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
